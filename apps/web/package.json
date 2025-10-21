@@ -2,20 +2,18 @@
   "name": "web",
   "version": "0.1.0",
   "private": true,
-  
-  
-  "scripts": {
-    "predev": "pnpm -w --filter @atrium/ui build",
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
   "dependencies": {
     "@atrium/ui": "workspace:*",
     "next": "15.5.6",
     "react": "19.1.0",
     "react-dom": "19.1.0"
+  },
+  "scripts": {
+    "prebuild": "pnpm -w --filter @atrium/ui build",
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start",
+    "lint": "next lint"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
