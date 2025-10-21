@@ -1,8 +1,0 @@
-
-> @atrium/ui@0.0.1 dev C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\packages\ui
-> tsc -w -p tsconfig.json
-
-[2J[3J[H11:17:47 - Starting compilation in watch mode...
-
-
-11:17:49 - Found 0 errors. Watching for file changes.
