@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
-    "lint": "turbo lint"
+    "lint": "turbo lint",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@types/node": "^22.5.0",
@@ -30,6 +31,11 @@
     "packages/*"
   ],
   "lint-staged": {
-    "*.{ts,tsx,js,jsx,json,md,css}": ["prettier --write", "eslint --fix"]
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix"
+    ],
+    "*.{json,md,css,html,yml,yaml}": [
+      "prettier --write"
+    ]
   }
 }

@@ -1,14 +1,12 @@
-# Node
 node_modules
 pnpm-lock.yaml
 
-# Builds
 dist
 .next
+.turbo
 out
 coverage
 
-# OS / Editor
 .DS_Store
 Thumbs.db
 .idea
