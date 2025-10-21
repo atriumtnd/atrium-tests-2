@@ -1,0 +1,52 @@
+
+> web@0.1.0 predev C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web
+> pnpm -w --filter @atrium/ui build
+
+Scope: 2 of 3 workspace projects
+packages/ui build$ tsc -p tsconfig.json
+. build$ turbo build
+. build: turbo 2.5.8
+. build: • Packages in scope: @atrium/ui, web
+. build: • Running build in 2 packages
+. build: • Remote caching disabled
+. build: @atrium/ui:build: cache hit, replaying logs dbbca4b91f2af689
+. build: @atrium/ui:build: 
+. build: @atrium/ui:build: > @atrium/ui@0.0.1 build C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\packages\ui
+. build: @atrium/ui:build: > tsc -p tsconfig.json
+. build: @atrium/ui:build: 
+. build: web:build: cache miss, executing f6c44f3127f17899
+. build: web:build: 
+. build: web:build: > web@0.1.0 build C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web
+. build: web:build: > next build
+. build: web:build: 
+packages/ui build: Done
+. build: web:build:    ▲ Next.js 15.5.6
+. build: web:build: 
+. build: web:build:    Creating an optimized production build ...
+. build: web:build:  ✓ Compiled successfully in 1563ms
+. build: web:build:    Linting and checking validity of types ...
+. build: web:build:    Collecting page data ...
+. build: web:build:    Generating static pages (0/5) ...
+. build: web:build:    Generating static pages (1/5) 
+. build: web:build:    Generating static pages (2/5) 
+. build: web:build:    Generating static pages (3/5) 
+. build: web:build:  ✓ Generating static pages (5/5)
+. build: web:build:    Finalizing page optimization ...
+. build: web:build:    Collecting build traces ...
+. build: web:build: 
+. build: web:build: Route (app)                                 Size  First Load JS
+. build: web:build: ┌ ○ /                                      123 B         102 kB
+. build: web:build: └ ○ /_not-found                            988 B         103 kB
+. build: web:build: + First Load JS shared by all             102 kB
+. build: web:build:   ├ chunks/685-34e17367c0c9029b.js       45.6 kB
+. build: web:build:   ├ chunks/c7e7739b-eb240fdda60f2e9f.js  54.2 kB
+. build: web:build:   └ other shared chunks (total)          1.96 kB
+. build: web:build: 
+. build: web:build: 
+. build: web:build: ○  (Static)  prerendered as static content
+. build: web:build: 
+. build:  Tasks:    2 successful, 2 total
+. build: Cached:    1 cached, 2 total
+. build:   Time:    24.421s 
+. build: Done
+

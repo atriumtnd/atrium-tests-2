@@ -1,0 +1,4 @@
+
+> @atrium/ui@0.0.1 build C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\packages\ui
+> tsc -p tsconfig.json
+
