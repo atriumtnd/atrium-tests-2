@@ -9,7 +9,7 @@
     "react-dom": "19.1.0"
   },
   "scripts": {
-    "prebuild": "pnpm -w --filter @atrium/ui build",
+    "prebuild": "pnpm -w run build:ui",
     "build": "next build",
     "dev": "next dev",
     "start": "next start",

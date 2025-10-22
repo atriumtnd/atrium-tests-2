@@ -6,10 +6,11 @@
     "node": "20.x"
   },
   "scripts": {
-    "dev": "turbo dev",
     "build": "turbo build",
+    "dev": "turbo dev",
     "lint": "turbo lint",
-    "prepare": "husky"
+    "prepare": "husky",
+    "build:ui": "pnpm -C packages/ui run build"
   },
   "devDependencies": {
     "@types/node": "^22.5.0",

@@ -1,29 +1,794 @@
 
-> web@0.1.0 build C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web
-> next build
+> web@0.1.0 prebuild C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web
+> pnpm -w --filter @atrium/ui build
 
-   ▲ Next.js 15.5.6
-
-   Creating an optimized production build ...
- ✓ Compiled successfully in 1563ms
-   Linting and checking validity of types ...
-   Collecting page data ...
-   Generating static pages (0/5) ...
-   Generating static pages (1/5) 
-   Generating static pages (2/5) 
-   Generating static pages (3/5) 
- ✓ Generating static pages (5/5)
-   Finalizing page optimization ...
-   Collecting build traces ...
-
-Route (app)                                 Size  First Load JS
-┌ ○ /                                      123 B         102 kB
-└ ○ /_not-found                            988 B         103 kB
-+ First Load JS shared by all             102 kB
-  ├ chunks/685-34e17367c0c9029b.js       45.6 kB
-  ├ chunks/c7e7739b-eb240fdda60f2e9f.js  54.2 kB
-  └ other shared chunks (total)          1.96 kB
-
-
-○  (Static)  prerendered as static content
-
+.                                        |  WARN  Unsupported engine: wanted: {"node":"20.x"} (current: {"node":"v22.18.0","pnpm":"9.12.3"})
+Scope: 2 of 3 workspace projects
+packages/ui build$ tsc -p tsconfig.json
+. build$ turbo build
+packages/ui build: 'tsc' n�o � reconhecido como um comando interno
+packages/ui build: ou externo, um programa oper�vel ou um arquivo em lotes.
+packages/ui build: Failed
+C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\packages\ui:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @atrium/ui@0.0.1 build: `tsc -p tsconfig.json`
+Exit status 1
+ WARN   Local package.json exists, but node_modules missing, did you mean to install?
+. build: 'turbo' n�o � reconhecido como um comando interno
+. build: ou externo, um programa oper�vel ou um arquivo em lotes.
+. build: Failed
+ ELIFECYCLE  Command failed with exit code 1.
+ build: web:build: > pnpm -w --filter @atrium/ui build
+. build: web:build: 
+packages/ui build: Done
+. build: web:build: .                                        |  WARN  Unsupported engine: wanted: {"node":"20.x"} (current: {"node":"v22.18.0","pnpm":"9.12.3"})
+. build: web:build: Scope: 2 of 3 workspace projects
+. build: web:build: packages/ui build$ tsc -p tsconfig.json
+. build: web:build: . build$ turbo build
+. build: web:build: packages/ui build: 'tsc' n�o � reconhecido como um comando interno
+. build: web:build: packages/ui build: ou externo, um programa oper�vel ou um arquivo em lotes.
+. build: web:build: packages/ui build: Failed
+. build: web:build: C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\packages\ui:
+. build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @atrium/ui@0.0.1 build: `tsc -p tsconfig.json`
+. build: web:build: Exit status 1
+. build: web:build:  WARN   Local package.json exists, but node_modules missing, did you mean to install?
+. build: web:build: . build: 'turbo' n�o � reconhecido como um comando interno
+. build: web:build: . build: ou externo, um programa oper�vel ou um arquivo em lotes.
+. build: web:build: . build: Failed
+. build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build:  Tasks:    1 successful, 2 total
+. build: Cached:    1 cached, 2 total
+. build:   Time:    2.462s 
+. build: Failed:    web#build
+. build:  ERROR  run failed: command  exited (1)
+. build: Failed
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+Exit status 1
+ ELIFECYCLE  Command failed with exit code 1.
+ild: packages/ui build: ou externo, um programa oper�vel ou um arquivo em lotes.
+. build: web:build: . build: web:build: packages/ui build: Failed
+. build: web:build: . build: web:build: C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\packages\ui:
+. build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @atrium/ui@0.0.1 build: `tsc -p tsconfig.json`
+. build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build:  WARN   Local package.json exists, but node_modules missing, did you mean to install?
+. build: web:build: . build: web:build: . build: 'turbo' n�o � reconhecido como um comando interno
+. build: web:build: . build: web:build: . build: ou externo, um programa oper�vel ou um arquivo em lotes.
+. build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build:   Time:    2.462s 
+. build: web:build: . build: Failed:    web#build
+. build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: Failed
+. build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: Exit status 1
+. build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build:  Tasks:    1 successful, 2 total
+. build: Cached:    1 cached, 2 total
+. build:   Time:    5.39s 
+. build: Failed:    web#build
+. build:  ERROR  run failed: command  exited (1)
+. build: Failed
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+Exit status 1
+ ELIFECYCLE  Command failed with exit code 1.
+bo' n�o � reconhecido como um comando interno
+. build: web:build: . build: web:build: . build: web:build: . build: ou externo, um programa oper�vel ou um arquivo em lotes.
+. build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build:   Time:    2.462s 
+. build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build:   Time:    5.39s 
+. build: web:build: . build: Failed:    web#build
+. build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: Failed
+. build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: Exit status 1
+. build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build:  Tasks:    1 successful, 2 total
+. build: Cached:    1 cached, 2 total
+. build:   Time:    8.351s 
+. build: Failed:    web#build
+. build:  ERROR  run failed: command  exited (1)
+. build: Failed
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+Exit status 1
+ ELIFECYCLE  Command failed with exit code 1.
+web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build:   Time:    2.462s 
+. build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build:   Time:    5.39s 
+. build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build:   Time:    8.351s 
+. build: web:build: . build: Failed:    web#build
+. build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: Failed
+. build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: Exit status 1
+. build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build:  Tasks:    1 successful, 2 total
+. build: Cached:    1 cached, 2 total
+. build:   Time:    11.345s 
+. build: Failed:    web#build
+. build:  ERROR  run failed: command  exited (1)
+. build: Failed
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+Exit status 1
+ ELIFECYCLE  Command failed with exit code 1.
+: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build:   Time:    5.39s 
+. build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build:   Time:    8.351s 
+. build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build:   Time:    11.345s 
+. build: web:build: . build: Failed:    web#build
+. build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: Failed
+. build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: Exit status 1
+. build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build:  Tasks:    1 successful, 2 total
+. build: Cached:    1 cached, 2 total
+. build:   Time:    14.402s 
+. build: Failed:    web#build
+. build:  ERROR  run failed: command  exited (1)
+. build: Failed
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+Exit status 1
+ ELIFECYCLE  Command failed with exit code 1.
+ web:build: . build: web:build: . build:   Time:    5.39s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build:   Time:    8.351s 
+. build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build:   Time:    11.345s 
+. build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build:   Time:    14.402s 
+. build: web:build: . build: Failed:    web#build
+. build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: Failed
+. build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: Exit status 1
+. build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build:  Tasks:    1 successful, 2 total
+. build: Cached:    1 cached, 2 total
+. build:   Time:    17.343s 
+. build: Failed:    web#build
+. build:  ERROR  run failed: command  exited (1)
+. build: Failed
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+Exit status 1
+ ELIFECYCLE  Command failed with exit code 1.
+zevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    8.351s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build:   Time:    11.345s 
+. build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build:   Time:    14.402s 
+. build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build:   Time:    17.343s 
+. build: web:build: . build: Failed:    web#build
+. build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: Failed
+. build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: Exit status 1
+. build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build:  Tasks:    1 successful, 2 total
+. build: Cached:    1 cached, 2 total
+. build:   Time:    20.442s 
+. build: Failed:    web#build
+. build:  ERROR  run failed: command  exited (1)
+. build: Failed
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+Exit status 1
+ ELIFECYCLE  Command failed with exit code 1.
+uild: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    11.345s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build:   Time:    14.402s 
+. build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build:   Time:    17.343s 
+. build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build:   Time:    20.442s 
+. build: web:build: . build: Failed:    web#build
+. build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: Failed
+. build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: Exit status 1
+. build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build:  Tasks:    1 successful, 2 total
+. build: Cached:    1 cached, 2 total
+. build:   Time:    23.245s 
+. build: Failed:    web#build
+. build:  ERROR  run failed: command  exited (1)
+. build: Failed
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+Exit status 1
+ ELIFECYCLE  Command failed with exit code 1.
+l
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    11.345s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    14.402s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build:   Time:    17.343s 
+. build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build:   Time:    20.442s 
+. build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build:   Time:    23.245s 
+. build: web:build: . build: Failed:    web#build
+. build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: Failed
+. build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: Exit status 1
+. build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build:  Tasks:    1 successful, 2 total
+. build: Cached:    1 cached, 2 total
+. build:   Time:    25.992s 
+. build: Failed:    web#build
+. build:  ERROR  run failed: command  exited (1)
+. build: Failed
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+Exit status 1
+ ELIFECYCLE  Command failed with exit code 1.
+ppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    14.402s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    17.343s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build:   Time:    20.442s 
+. build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build:   Time:    23.245s 
+. build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build:   Time:    25.992s 
+. build: web:build: . build: Failed:    web#build
+. build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: Failed
+. build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: Exit status 1
+. build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build:  Tasks:    1 successful, 2 total
+. build: Cached:    1 cached, 2 total
+. build:   Time:    28.824s 
+. build: Failed:    web#build
+. build:  ERROR  run failed: command  exited (1)
+. build: Failed
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+Exit status 1
+ ELIFECYCLE  Command failed with exit code 1.
+trium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    17.343s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    20.442s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build:   Time:    23.245s 
+. build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build:   Time:    25.992s 
+. build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build:   Time:    28.824s 
+. build: web:build: . build: Failed:    web#build
+. build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: Failed
+. build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: Exit status 1
+. build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build:  Tasks:    1 successful, 2 total
+. build: Cached:    1 cached, 2 total
+. build:   Time:    31.566s 
+. build: Failed:    web#build
+. build:  ERROR  run failed: command  exited (1)
+. build: Failed
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+Exit status 1
+ ELIFECYCLE  Command failed with exit code 1.
+ld: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    20.442s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    23.245s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build:   Time:    25.992s 
+. build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build:   Time:    28.824s 
+. build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build:   Time:    31.566s 
+. build: web:build: . build: Failed:    web#build
+. build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: Failed
+. build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: Exit status 1
+. build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build:  Tasks:    1 successful, 2 total
+. build: Cached:    1 cached, 2 total
+. build:   Time:    34.244s 
+. build: Failed:    web#build
+. build:  ERROR  run failed: command  exited (1)
+. build: Failed
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+Exit status 1
+ ELIFECYCLE  Command failed with exit code 1.
+ments\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    20.442s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    23.245s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    25.992s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build:   Time:    28.824s 
+. build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build:   Time:    31.566s 
+. build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build:   Time:    34.244s 
+. build: web:build: . build: Failed:    web#build
+. build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: Failed
+. build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: Exit status 1
+. build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build:  Tasks:    1 successful, 2 total
+. build: Cached:    1 cached, 2 total
+. build:   Time:    36.893s 
+. build: Failed:    web#build
+. build:  ERROR  run failed: command  exited (1)
+. build: Failed
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+Exit status 1
+ ELIFECYCLE  Command failed with exit code 1.
+d: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    23.245s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    25.992s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:   Time:    28.824s 
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build: web:build: . build:   Time:    31.566s 
+. build: web:build: . build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build: web:build: . build:   Time:    34.244s 
+. build: web:build: . build: web:build: . build: Failed:    web#build
+. build: web:build: . build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: web:build: . build: Failed
+. build: web:build: . build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: . build: web:build: Exit status 1
+. build: web:build: . build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: . build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web:build: . build:  Tasks:    1 successful, 2 total
+. build: web:build: . build: Cached:    1 cached, 2 total
+. build: web:build: . build:   Time:    36.893s 
+. build: web:build: . build: Failed:    web#build
+. build: web:build: . build:  ERROR  run failed: command  exited (1)
+. build: web:build: . build: Failed
+. build: web:build:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+. build: web:build: Exit status 1
+. build: web:build:  ELIFECYCLE  Command failed with exit code 1.
+. build: web:build: ERROR: command finished with error: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build: web#build: command (C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web) C:\Users\Joelson Azevedo\AppData\Roaming\npm\pnpm.cmd run build exited (1)
+. build:  Tasks:    1 successful, 2 total
+. build: Cached:    1 cached, 2 total
+. build:   Time:    39.594s 
+. build: Failed:    web#build
+. build:  ERROR  run failed: command  exited (1)
+. build: Failed
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  atrium-tests-2@ build: `turbo build`
+Exit status 1
+ ELIFECYCLE  Command failed with exit code 1.
