@@ -1,6 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
+
+import PostHogProvider from "@/components/PostHogProvider"; // 👈 importamos o client component
 
 export const metadata: Metadata = {
   title: "Atrium Tests",
@@ -10,7 +12,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        {/* Inicializa o PostHog apenas no lado do cliente */}
+        <PostHogProvider />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,65 +1,65 @@
-// eslint.config.mjs (RAIZ)
+// eslint.config.mjs (raiz)
 import js from "@eslint/js";
 import globals from "globals";
-import tsParser from "@typescript-eslint/parser";
-import tsPlugin from "@typescript-eslint/eslint-plugin";
-import importPlugin from "eslint-plugin-import";
-
-const IGNORE = [
-  "**/node_modules/**",
-  "**/.next/**",
-  "**/dist/**",
-  "**/.turbo/**",
-  "**/coverage/**",
-];
+import tseslint from "typescript-eslint";
+import pluginImport from "eslint-plugin-import";
 
 export default [
-  // Ignora pastas geradas
-  { ignores: IGNORE },
-
-  // Regras base JS
-  js.configs.recommended,
-
-  // Config para TS/JS nos apps e packages
+  // Ignorar pastas geradas
   {
-    files: ["**/*.{ts,tsx,js,jsx}"],
+    ignores: [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/.next/**",
+      "**/.turbo/**",
+      "**/build/**",
+      "**/coverage/**",
+    ],
+  },
+
+  // Regras base para JS
+  {
+    files: ["**/*.{js,cjs,mjs,jsx}"],
     languageOptions: {
-      parser: tsParser,
+      ecmaVersion: 2022,
+      sourceType: "module",
+      globals: { ...globals.node, ...globals.browser },
+    },
+    ...js.configs.recommended,
+    plugins: { import: pluginImport },
+    settings: { "import/resolver": { typescript: true } },
+    rules: { "no-unused-vars": "warn" },
+  },
+
+  // Regras para TS/TSX
+  {
+    files: ["**/*.{ts,tsx}"],
+    languageOptions: {
+      parser: tseslint.parser,
       parserOptions: {
-        ecmaVersion: "latest",
+        project: ["./tsconfig.base.json"],
+        tsconfigRootDir: import.meta.dirname,
+        ecmaVersion: 2022,
         sourceType: "module",
-        // Se você quiser checagem com tsconfig, adicione "project" aqui depois:
-        // project: ["./tsconfig.base.json", "apps/*/tsconfig.json", "packages/*/tsconfig.json"],
       },
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
+      globals: { ...globals.node, ...globals.browser },
     },
     plugins: {
-      "@typescript-eslint": tsPlugin,
-      import: importPlugin,
+      import: pluginImport,
+      "@typescript-eslint": tseslint.plugin, // 👈 registra o plugin aqui
     },
-    // Pega as regras recomendadas do plugin TS + suas adições
+    settings: { "import/resolver": { typescript: true } },
     rules: {
-      ...tsPlugin.configs.recommended.rules,
-      // Organização de imports (ajuste a gosto)
+      "@typescript-eslint/consistent-type-imports": "warn",
+      "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
       "import/order": [
-        "error",
+        "warn",
         {
-          "newlines-between": "always",
+          groups: ["builtin", "external", "internal", ["parent", "sibling", "index"], "object"],
           alphabetize: { order: "asc", caseInsensitive: true },
-          groups: [["builtin", "external"], ["internal"], ["parent", "sibling", "index"]],
+          "newlines-between": "always",
         },
       ],
-    },
-    settings: {
-      // Faz o plugin de import resolver paths TS do monorepo
-      "import/resolver": {
-        typescript: {
-          project: ["./tsconfig.base.json", "apps/*/tsconfig.json", "packages/*/tsconfig.json"],
-        },
-      },
     },
   },
 ];
