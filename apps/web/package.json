@@ -5,10 +5,12 @@
   "dependencies": {
     "@atrium/ui": "workspace:*",
     "@supabase/supabase-js": "^2.76.1",
+    "@tailwindcss/typography": "^0.5.19",
     "next": "15.5.6",
     "posthog-js": "^1.280.1",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-markdown": "^10.1.0"
   },
   "scripts": {
     "prebuild": "pnpm -w run build:ui",
@@ -22,7 +24,7 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4.1.15",
     "@types/node": "^20.19.22",
-    "@types/react": "^19",
+    "@types/react": "^19.2.2",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.21",
     "eslint": "^9",

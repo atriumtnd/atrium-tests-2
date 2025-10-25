@@ -1,0 +1,26 @@
+
+> web@0.1.0 dev C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web
+> next dev
+
+   ▲ Next.js 15.5.6
+   - Local:        http://localhost:3000
+   - Network:      http://10.195.35.62:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 4.4s
+ ○ Compiling /legal/termos ...
+ ✓ Compiled /legal/termos in 7.8s (741 modules)
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web\legal\termos.md'
+    at TermosPage (src\app\legal\termos\page.tsx:8:19)
+   6 | export default function TermosPage() {
+   7 |   const filePath = path.join(process.cwd(), "legal", "termos.md");
+>  8 |   const content = fs.readFileSync(filePath, "utf-8");
+     |                   ^
+   9 |
+  10 |   return (
+  11 |     <main className="prose mx-auto p-8"> {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Joelson Azevedo\\Documents\\projetos\\atrium-tests-2\\apps\\web\\legal\\termos.md',
