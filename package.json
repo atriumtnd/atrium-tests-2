@@ -10,7 +10,8 @@
     "dev": "turbo dev --filter=web",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky",
+    "prepare": "husky || echo \"husky skipped\"",
+    "test": "echo \"No tests yet\" && exit 0",
     "build:ui": "pnpm -C packages/ui run build"
   },
   "devDependencies": {
