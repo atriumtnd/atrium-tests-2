@@ -4,9 +4,9 @@
     "jsx": "preserve",
     "moduleResolution": "Bundler",
     "plugins": [{ "name": "next" }],
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
-      "@/*": ["./src/*"],
+      "@/*": ["*"],
       "@ui/*": ["../../packages/ui/src/*"]
     },
     "lib": ["dom", "dom.iterable", "esnext"],

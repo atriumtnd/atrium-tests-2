@@ -13,8 +13,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR">
       <body>
-        {/* Inicializa o PostHog apenas no lado do cliente */}
-        <PostHogProvider />
+        <PostHogProvider>{children}</PostHogProvider>
         {children}
       </body>
     </html>
@@ -32,4 +31,4 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     Cookies
   </a>
   <p className="mt-2">© {new Date().getFullYear()} AtriumTech</p>
-</footer>
+</footer>;
