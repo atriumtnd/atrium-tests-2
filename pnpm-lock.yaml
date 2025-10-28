@@ -121,10 +121,10 @@ importers:
   packages/ui:
     dependencies:
       react:
-        specifier: '>=18'
+        specifier: ^19.1.0
         version: 19.1.0
       react-dom:
-        specifier: '>=18'
+        specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
     devDependencies:
       '@types/react':
