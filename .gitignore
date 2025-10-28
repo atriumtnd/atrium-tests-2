@@ -12,3 +12,5 @@ Thumbs.db
 .vscode
 .vercel
 .vercel/output/
+apps/web/.vercel/
+apps/web/.vercel/output/
