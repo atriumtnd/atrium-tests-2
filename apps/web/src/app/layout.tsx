@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
-import PostHogProvider from "@/components/PostHogProvider"; // 👈 importamos o client component
+import PostHogProvider from "../components/PostHogProvider"; // 👈 importamos o client component
 
 export const metadata: Metadata = {
   title: "Atrium Tests",
