@@ -10,7 +10,11 @@
     "posthog-js": "^1.280.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-markdown": "^10.1.0"
+    "react-markdown": "^10.1.0",
+    "@tailwindcss/postcss": "^4.1.15",
+    "postcss": "^8.5.6",
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^4.1.14"
   },
   "scripts": {
     "prebuild": "pnpm -w run build:ui",
@@ -22,15 +26,11 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4.1.15",
     "@types/node": "^20.19.22",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19",
-    "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "15.5.6",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.14",
     "typescript": "^5"
   }
 }

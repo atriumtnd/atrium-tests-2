@@ -65,12 +65,21 @@ importers:
       '@supabase/supabase-js':
         specifier: ^2.76.1
         version: 2.76.1
+      '@tailwindcss/postcss':
+        specifier: ^4.1.15
+        version: 4.1.15
       '@tailwindcss/typography':
         specifier: ^0.5.19
         version: 0.5.19(tailwindcss@4.1.14)
+      autoprefixer:
+        specifier: ^10.4.21
+        version: 10.4.21(postcss@8.5.6)
       next:
         specifier: 15.5.6
         version: 15.5.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      postcss:
+        specifier: ^8.5.6
+        version: 8.5.6
       posthog-js:
         specifier: ^1.280.1
         version: 1.280.1
@@ -83,13 +92,13 @@ importers:
       react-markdown:
         specifier: ^10.1.0
         version: 10.1.0(@types/react@19.2.2)(react@19.1.0)
+      tailwindcss:
+        specifier: ^4.1.14
+        version: 4.1.14
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3
         version: 3.3.1
-      '@tailwindcss/postcss':
-        specifier: ^4.1.15
-        version: 4.1.15
       '@types/node':
         specifier: ^20.19.22
         version: 20.19.22
@@ -99,21 +108,12 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.2.2(@types/react@19.2.2)
-      autoprefixer:
-        specifier: ^10.4.21
-        version: 10.4.21(postcss@8.5.6)
       eslint:
         specifier: ^9
         version: 9.38.0(jiti@2.6.1)
       eslint-config-next:
         specifier: 15.5.6
         version: 15.5.6(eslint@9.38.0(jiti@2.6.1))(typescript@5.9.3)
-      postcss:
-        specifier: ^8.5.6
-        version: 8.5.6
-      tailwindcss:
-        specifier: ^4.1.14
-        version: 4.1.14
       typescript:
         specifier: ^5
         version: 5.9.3
