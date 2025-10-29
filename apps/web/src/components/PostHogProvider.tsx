@@ -1,8 +1,8 @@
 // apps/web/src/components/PostHogProvider.tsx
 "use client";
 
-import { useEffect } from "react";
 import posthog from "posthog-js";
+import { useEffect } from "react";
 
 type Props = { children: React.ReactNode };
 
