@@ -14,7 +14,9 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-markdown": "^10.1.0",
-    "tailwindcss": "^4.1.14"
+    "tailwindcss": "^4.1.14",
+    "@types/node": "^20.19.22",
+    "typescript": "^5.9.3"
   },
   "scripts": {
     "prebuild": "pnpm -w run build:ui",
@@ -26,11 +28,9 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@types/node": "^20.19.22",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "eslint": "^9",
-    "eslint-config-next": "15.5.6",
-    "typescript": "^5.9.3"
+    "eslint-config-next": "15.5.6"
   }
 }
