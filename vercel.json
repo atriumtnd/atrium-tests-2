@@ -1,6 +1,5 @@
 {
-  "installCommand": "pnpm install --frozen-lockfile --prod=false",
+  "framework": "nextjs",
   "buildCommand": "turbo build --filter=@atrium/ui --filter=web",
-  "outputDirectory": "apps/web/.next",
-  "framework": "nextjs"
+  "outputDirectory": "apps/web/.next"
 }
