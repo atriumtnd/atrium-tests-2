@@ -1,4 +1,0 @@
-{
-  "buildCommand": "corepack enable && pnpm install --frozen-lockfile && turbo build --filter=@atrium/ui --filter=web",
-  "framework": "nextjs"
-}
