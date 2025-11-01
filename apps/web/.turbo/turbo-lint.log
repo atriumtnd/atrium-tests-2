@@ -2,3 +2,28 @@
 > web@0.1.0 lint C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web
 > eslint .
 
+
+C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web\src\app\dashboard\page.tsx
+  1:0  error  Parsing error: File appears to be binary
+
+C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web\src\app\layout.tsx
+  1:0  error  Parsing error: File appears to be binary
+
+C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web\src\app\page.tsx
+  1:0  error  Parsing error: File appears to be binary
+
+C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web\src\lib\i18n\next-i18next.config.mjs
+  1:0  error  Parsing error: File appears to be binary
+
+C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web\src\lib\supabase\client.ts
+  1:0  error  Parsing error: File appears to be binary
+
+C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web\src\lib\supabase\server.ts
+  1:0  error  Parsing error: File appears to be binary
+
+C:\Users\Joelson Azevedo\Documents\projetos\atrium-tests-2\apps\web\src\lib\supabase\types.ts
+  1:0  error  Parsing error: File appears to be binary
+
+✖ 7 problems (7 errors, 0 warnings)
+
+ ELIFECYCLE  Command failed with exit code 1.

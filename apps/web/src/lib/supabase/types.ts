@@ -1,0 +1,2 @@
+﻿// supabase types placeholder
+
