@@ -2,3 +2,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Tokens base */
+:root {
+  --bg: #0b0c0f; /* fundo escuro elegante */
+  --fg: #e5e7eb; /* texto */
+  --muted: #9ca3af; /* texto secundário */
+  --brand: #2a83ff; /* cor de ação */
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* Componentes utilitários */
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-medium transition;
+}
+.btn-primary {
+  @apply btn bg-brand-500 hover:bg-brand-600 text-white shadow-soft;
+}
+.btn-neutral {
+  @apply btn bg-slate-800 hover:bg-slate-700 text-slate-100 shadow-soft;
+}
+.btn-danger {
+  @apply btn bg-red-600 hover:bg-red-700 text-white shadow-soft;
+}
+.card {
+  @apply rounded-2xl bg-slate-900/60 border border-slate-800 p-5 shadow-soft;
+}
