@@ -1,5 +1,0 @@
-{
-  "framework": "nextjs",
-  "buildCommand": "turbo build --filter=@atrium/ui --filter=web",
-  "outputDirectory": "apps/web/.next"
-}
