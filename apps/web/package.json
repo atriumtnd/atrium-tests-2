@@ -7,35 +7,48 @@
   },
   "dependencies": {
     "@atrium/ui": "workspace:*",
+    "@sentry/nextjs": "^10.22.0",
+    "@stripe/stripe-js": "^8.2.0",
+    "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.76.1",
     "@tailwindcss/postcss": "^4.1.15",
     "@tailwindcss/typography": "^0.5.19",
-    "autoprefixer": "^10.4.21",
+    "@types/node": "^20.19.22",
+    "@vercel/analytics": "^1.5.0",
+    "clsx": "^2.1.1",
+    "i18next": "^25.6.0",
+    "jotai": "^2.15.0",
     "next": "15.5.6",
-    "postcss": "^8.5.6",
+    "next-i18next": "^15.4.2",
     "posthog-js": "^1.280.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "react-i18next": "^16.2.3",
     "react-markdown": "^10.1.0",
-    "tailwindcss": "^4.1.14",
-    "@types/node": "^20.19.22",
-    "typescript": "^5.9.3"
+    "stripe": "^19.2.0",
+    "typescript": "^5.9.3",
+    "zod": "^4.1.12",
+    "zustand": "^5.0.8"
   },
   "scripts": {
     "prebuild": "pnpm -w run build:ui",
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "typecheck": "tsc --noEmit"
   },
+  "packageManager": "pnpm@9.12.3",
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/node": "^20.19.22",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
+    "autoprefixer": "^10.4.21",
     "eslint": "^9.38.0",
     "eslint-config-next": "15.5.6",
-    "typescript": "^5.9.3",
-    "@types/node": "^20.19.22"
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18",
+    "typescript": "^5.9.3"
   }
 }

@@ -6,16 +6,17 @@
     "node": "20.x"
   },
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev --filter=web",
-    "lint": "eslint .",
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
     "lint:fix": "eslint . --fix",
     "prepare": "husky || echo \"husky skipped\"",
     "test": "echo \"No tests yet\" && exit 0",
-    "build:ui": "pnpm -C packages/ui run build"
+    "build:ui": "pnpm -C packages/ui run build",
+    "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
-    "@eslint/js": "^9",
+    "@eslint/js": "^9.38.0",
     "@types/node": "^22.5.0",
     "@typescript-eslint/eslint-plugin": "^8.46.2",
     "@typescript-eslint/parser": "^8.46.2",
@@ -23,17 +24,20 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "globals": "^16.4.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.5",
-    "prettier": "^3.6.2",
-    "tsx": "^4.17.0",
-    "turbo": "^2.0.0",
-    "typescript": "^5.6.0",
-    "typescript-eslint": "^8.46.2",
     "next": "15.5.6",
+    "prettier": "^3.6.2",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "tsx": "^4.17.0",
+    "turbo": "^2.5.8",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.46.2"
   },
   "pnpm": {
     "overrides": {}
@@ -49,5 +53,8 @@
     "*.{json,md,css,html,yml,yaml}": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "i18next-resources-to-backend": "^1.2.1"
   }
 }
